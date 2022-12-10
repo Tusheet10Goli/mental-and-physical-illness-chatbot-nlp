@@ -1,0 +1,103 @@
+Loading existing processed datasets...
+Loading existing multi-output classifier of neural networks for symptom extraction...
+Evaluating model based on single train-test (65% - 35%) split...
+Model train accuracy: 1.0
+Model train F1 score: 1.0
+Model test accuracy: 1.0
+Model test F1 score: 1.0
+Evaluating model based on k-fold (k=20) cross validation...
+Model accuracy, k-fold split 1: 1.0
+Model F1 score, k-fold split 1: 1.0
+Model accuracy, k-fold split 2: 1.0
+Model F1 score, k-fold split 2: 1.0
+Model accuracy, k-fold split 3: 1.0
+Model F1 score, k-fold split 3: 1.0
+Model accuracy, k-fold split 4: 1.0
+Model F1 score, k-fold split 4: 1.0
+Model accuracy, k-fold split 5: 1.0
+Model F1 score, k-fold split 5: 1.0
+Model accuracy, k-fold split 6: 1.0
+Model F1 score, k-fold split 6: 1.0
+Model accuracy, k-fold split 7: 1.0
+Model F1 score, k-fold split 7: 1.0
+Model accuracy, k-fold split 8: 1.0
+Model F1 score, k-fold split 8: 1.0
+Model accuracy, k-fold split 9: 1.0
+Model F1 score, k-fold split 9: 1.0
+Model accuracy, k-fold split 10: 1.0
+Model F1 score, k-fold split 10: 1.0
+Model accuracy, k-fold split 11: 1.0
+Model F1 score, k-fold split 11: 1.0
+Model accuracy, k-fold split 12: 1.0
+Model F1 score, k-fold split 12: 1.0
+Model accuracy, k-fold split 13: 1.0
+Model F1 score, k-fold split 13: 1.0
+Model accuracy, k-fold split 14: 1.0
+Model F1 score, k-fold split 14: 1.0
+Model accuracy, k-fold split 15: 1.0
+Model F1 score, k-fold split 15: 1.0
+Model accuracy, k-fold split 16: 1.0
+Model F1 score, k-fold split 16: 1.0
+Model accuracy, k-fold split 17: 1.0
+Model F1 score, k-fold split 17: 1.0
+Model accuracy, k-fold split 18: 1.0
+Model F1 score, k-fold split 18: 1.0
+Model accuracy, k-fold split 19: 1.0
+Model F1 score, k-fold split 19: 1.0
+Model accuracy, k-fold split 20: 1.0
+Model F1 score, k-fold split 20: 1.0
+Loading existing random forest model for physical disease classification...
+Evaluating model based on single train-test (80% - 20%) split...
+Model train accuracy: 0.9949186991869918
+Model train F1 score: 0.9949281586097753
+Model test accuracy: 0.9959349593495935
+Model test F1 score: 0.9959464276969549
+Evaluating model based on k-fold (k=10) cross validation...
+Model accuracy, k-fold split 1: 0.9939024390243902
+Model F1 score, k-fold split 1: 0.9938791013047141
+Model accuracy, k-fold split 2: 0.9979674796747967
+Model F1 score, k-fold split 2: 0.9979674796747967
+Model accuracy, k-fold split 3: 0.9959349593495935
+Model F1 score, k-fold split 3: 0.9959508074612909
+Model accuracy, k-fold split 4: 0.9979674796747967
+Model F1 score, k-fold split 4: 0.9979618727221755
+Model accuracy, k-fold split 5: 1.0
+Model F1 score, k-fold split 5: 1.0
+Model accuracy, k-fold split 6: 0.9959349593495935
+Model F1 score, k-fold split 6: 0.9959215698876357
+Model accuracy, k-fold split 7: 0.9939024390243902
+Model F1 score, k-fold split 7: 0.9940056102315409
+Model accuracy, k-fold split 8: 0.9898373983739838
+Model F1 score, k-fold split 8: 0.9898670642386649
+Model accuracy, k-fold split 9: 0.9939024390243902
+Model F1 score, k-fold split 9: 0.9939444439724787
+Model accuracy, k-fold split 10: 0.991869918699187
+Model F1 score, k-fold split 10: 0.9917069590427404
+Loading existing neural network model for physical disease classification...
+Evaluating model based on single train-test (80% - 20%) split...
+Model train accuracy: 1.0
+Model train F1 score: 1.0
+Model test accuracy: 1.0
+Model test F1 score: 1.0
+Evaluating model based on k-fold (k=10) cross validation...
+Model accuracy, k-fold split 1: 1.0
+Model F1 score, k-fold split 1: 1.0
+Model accuracy, k-fold split 2: 1.0
+Model F1 score, k-fold split 2: 1.0
+Model accuracy, k-fold split 3: 1.0
+Model F1 score, k-fold split 3: 1.0
+Model accuracy, k-fold split 4: 1.0
+Model F1 score, k-fold split 4: 1.0
+Model accuracy, k-fold split 5: 1.0
+Model F1 score, k-fold split 5: 1.0
+Model accuracy, k-fold split 6: 1.0
+Model F1 score, k-fold split 6: 1.0
+Model accuracy, k-fold split 7: 1.0
+Model F1 score, k-fold split 7: 1.0
+Model accuracy, k-fold split 8: 1.0
+Model F1 score, k-fold split 8: 1.0
+Model accuracy, k-fold split 9: 1.0
+Model F1 score, k-fold split 9: 1.0
+Model accuracy, k-fold split 10: 1.0
+Model F1 score, k-fold split 10: 1.0
+Time elapsed: 25.645962385336556 minutes.

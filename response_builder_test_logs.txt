@@ -1,0 +1,430 @@
+=================================================================
+PHYSICAL ILLNESS PREDICTION (PIP) PIPELINE TEST CASES AND RESULTS
+=================================================================
+
+-----------------------------------------------------------------
+
+Provided message: my skin is really itchy, I got rashes and patches all over, what is happening?
+Extracted symptoms: ['dischromic _patches', 'patches_in_throat', 'skin_peeling', 'skin_rash', 'yellowish_skin']
+Ground truth symptoms: ['itching', 'skin_rash', 'dischromic _patches']
+Ground truth illness: fungal infection
+
+Generated response (random forest PIP model): 
+Your 3 most likely physical illness risks are:
+fungal infection - 23.4%
+jaundice - 9.8%
+psoriasis - 9.0%
+
+Your suggested precautions are:
+fungal infection - bath twice, use detol or neem in bathing water, keep infected area dry, and use clean cloths
+jaundice - drink plenty of water, consume milk thistle, eat fruits and high fiberous food, and medication
+psoriasis - wash hands with warm soapy water, stop bleeding using pressure, consult doctor, and salt baths
+
+Generated response (neural network PIP model): 
+Your 3 most likely physical illness risks are:
+fungal infection - 28.6%
+aids - 8.6%
+psoriasis - 6.2%
+
+Your suggested precautions are:
+fungal infection - bath twice, use detol or neem in bathing water, keep infected area dry, and use clean cloths
+aids - avoid open cuts, wear ppe if possible, consult doctor, and follow up
+psoriasis - wash hands with warm soapy water, stop bleeding using pressure, consult doctor, and salt baths
+
+PASS (random forest PIP model)
+PASS (neural network PIP model)
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
+
+Provided message: I am sneezing so much, I have a cough, my throat hurts, and I have a headache. I also think I might be getting a fever.
+Extracted symptoms: ['continuous_sneezing', 'cough', 'headache', 'patches_in_throat', 'throat_irritation']
+Ground truth symptoms: ['continuous_sneezing', 'cough', 'throat_irritation', 'headache', 'mild_fever']
+Ground truth illness: common cold
+
+Generated response (random forest PIP model): 
+Your 3 most likely physical illness risks are:
+common cold - 7.6%
+acne - 4.7%
+gerd - 4.4%
+
+Your suggested precautions are:
+common cold - drink vitamin c rich drinks, take vapour, avoid cold food, and keep fever in check
+acne - bath twice, avoid fatty spicy food, drink plenty of water, and avoid too many products
+gerd - avoid fatty spicy food, avoid lying down after eating, maintain healthy weight, and exercise
+
+Generated response (neural network PIP model): 
+Your 3 most likely physical illness risks are:
+aids - 21.1%
+gerd - 8.0%
+common cold - 4.8%
+
+Your suggested precautions are:
+aids - avoid open cuts, wear ppe if possible, consult doctor, and follow up
+gerd - avoid fatty spicy food, avoid lying down after eating, maintain healthy weight, and exercise
+common cold - drink vitamin c rich drinks, take vapour, avoid cold food, and keep fever in check
+
+PASS (random forest PIP model)
+PASS (neural network PIP model)
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
+
+Provided message: I keep on sneezing and my eyes are very watery. What am I dealing with?
+Extracted symptoms: ['continuous_sneezing']
+Ground truth symptoms: ['continuous_sneezing', 'watering_from_eyes']
+Ground truth illness: allergy
+
+Generated response (random forest PIP model): 
+Your 3 most likely physical illness risks are:
+acne - 5.1%
+gerd - 4.7%
+allergy - 4.6%
+
+Your suggested precautions are:
+acne - bath twice, avoid fatty spicy food, drink plenty of water, and avoid too many products
+gerd - avoid fatty spicy food, avoid lying down after eating, maintain healthy weight, and exercise
+allergy - apply calamine, cover area with bandage, and use ice to compress itching
+
+Generated response (neural network PIP model): 
+Your 3 most likely physical illness risks are:
+allergy - 24.0%
+heart attack - 6.4%
+gastroenteritis - 4.1%
+
+Your suggested precautions are:
+allergy - apply calamine, cover area with bandage, and use ice to compress itching
+heart attack - call ambulance, chew or swallow asprin, and keep calm
+gastroenteritis - stop eating solid food for while, try taking small sips of water, rest, and ease back into eating
+
+PASS (random forest PIP model)
+PASS (neural network PIP model)
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
+
+Provided message: I feel very nauseous, my head is hurting and I am throwing up. I have not felt anything like this before, what is it?
+Extracted symptoms: ['continuous_feel_of_urine']
+Ground truth symptoms: ['nausea', 'headache', 'vomiting']
+Ground truth illness: typhoid
+
+Generated response (random forest PIP model): 
+Your 3 most likely physical illness risks are:
+urinary tract infection - 10.6%
+acne - 4.8%
+gerd - 4.4%
+
+Your suggested precautions are:
+urinary tract infection - drink plenty of water, increase vitamin c intake, drink cranberry juice, and take probiotics
+acne - bath twice, avoid fatty spicy food, drink plenty of water, and avoid too many products
+gerd - avoid fatty spicy food, avoid lying down after eating, maintain healthy weight, and exercise
+
+Generated response (neural network PIP model): 
+Your 3 most likely physical illness risks are:
+urinary tract infection - 43.4%
+hepatitis c - 3.6%
+gastroenteritis - 3.5%
+
+Your suggested precautions are:
+urinary tract infection - drink plenty of water, increase vitamin c intake, drink cranberry juice, and take probiotics
+hepatitis c - Consult nearest hospital, vaccination, eat healthy, and medication
+gastroenteritis - stop eating solid food for while, try taking small sips of water, rest, and ease back into eating
+
+FAIL (random forest PIP model)
+FAIL (neural network PIP model)
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
+
+Provided message: I have a headache and I feel very dizzy. It is hard for me to walk or stand, I can't balance well. My chest also hurts a bit too. What do I have?
+Extracted symptoms: ['chest_pain', 'headache', 'loss_of_balance']
+Ground truth symptoms: ['headache', 'dizziness', 'loss_of_balance', 'chest_pain']
+Ground truth illness: hypertension
+
+Generated response (random forest PIP model): 
+Your 3 most likely physical illness risks are:
+hypertension - 10.4%
+gerd - 9.5%
+cervical spondylosis - 8.2%
+
+Your suggested precautions are:
+hypertension - meditation, salt baths, reduce stress, and get proper sleep
+gerd - avoid fatty spicy food, avoid lying down after eating, maintain healthy weight, and exercise
+cervical spondylosis - use heating pad or cold pack, exercise, take otc pain reliver, and consult doctor
+
+Generated response (neural network PIP model): 
+Your 3 most likely physical illness risks are:
+hypertension - 49.8%
+paralysis (brain hemorrhage) - 5.2%
+(vertigo) paroymsal  positional vertigo - 5.0%
+
+Your suggested precautions are:
+hypertension - meditation, salt baths, reduce stress, and get proper sleep
+paralysis (brain hemorrhage) - massage, eat healthy, exercise, and consult doctor
+(vertigo) paroymsal  positional vertigo - lie down, avoid sudden change in body, avoid abrupt head movment, and relax
+
+PASS (random forest PIP model)
+PASS (neural network PIP model)
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
+
+Provided message: I have rashes and red spots all over my skin, my head hurts and I feel like I might be getting a fever. What is going on?
+Extracted symptoms: ['high_fever', 'mild_fever', 'red_spots_over_body']
+Ground truth symptoms: ['skin_rash', 'red_spots_over_body', 'headache', 'mild_fever']
+Ground truth illness: chicken pox
+
+Generated response (random forest PIP model): 
+Your 3 most likely physical illness risks are:
+chicken pox - 23.4%
+hepatitis a - 11.5%
+tuberculosis - 3.8%
+
+Your suggested precautions are:
+chicken pox - use neem in bathing , consume neem leaves, take vaccine, and avoid public places
+hepatitis a - Consult nearest hospital, wash hands through, avoid fatty spicy food, and medication
+tuberculosis - cover mouth, consult doctor, medication, and rest
+
+Generated response (neural network PIP model): 
+Your 3 most likely physical illness risks are:
+chicken pox - 29.2%
+aids - 4.7%
+dengue - 4.3%
+
+Your suggested precautions are:
+chicken pox - use neem in bathing , consume neem leaves, take vaccine, and avoid public places
+aids - avoid open cuts, wear ppe if possible, consult doctor, and follow up
+dengue - drink papaya leaf juice, avoid fatty spicy food, keep mosquitos away, and keep hydrated
+
+PASS (random forest PIP model)
+PASS (neural network PIP model)
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
+
+Provided message: I feel very weak and stiff. I try to move but I can't. Like it is painful to walk and lift things. What is happening?
+Extracted symptoms: ['painful_walking', 'stiff_neck']
+Ground truth symptoms: ['muscle_weakness', 'movement_stiffness', 'painful_walking']
+Ground truth illness: arthritis
+
+Generated response (random forest PIP model): 
+Your 3 most likely physical illness risks are:
+arthritis - 16.3%
+osteoarthristis - 15.4%
+migraine - 8.8%
+
+Your suggested precautions are:
+arthritis - exercise, use hot and cold therapy, try acupuncture, and massage
+osteoarthristis - acetaminophen, consult nearest hospital, follow up, and salt baths
+migraine - meditation, reduce stress, use poloroid glasses in sun, and consult doctor
+
+Generated response (neural network PIP model): 
+Your 3 most likely physical illness risks are:
+arthritis - 47.1%
+migraine - 5.4%
+acne - 3.4%
+
+Your suggested precautions are:
+arthritis - exercise, use hot and cold therapy, try acupuncture, and massage
+migraine - meditation, reduce stress, use poloroid glasses in sun, and consult doctor
+acne - bath twice, avoid fatty spicy food, drink plenty of water, and avoid too many products
+
+PASS (random forest PIP model)
+PASS (neural network PIP model)
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
+
+Provided message: I feel some pain in my bladder, my urine smells weird and I keep feeling like I have to pee... what is going on?
+Extracted symptoms: ['bladder_discomfort', 'continuous_feel_of_urine']
+Ground truth symptoms: ['bladder_discomfort', 'foul_smell_of_urine', 'continuous_feel_of_urine']
+Ground truth illness: urinary tract infection
+
+Generated response (random forest PIP model): 
+Your 3 most likely physical illness risks are:
+urinary tract infection - 32.0%
+gerd - 4.0%
+heart attack - 3.5%
+
+Your suggested precautions are:
+urinary tract infection - drink plenty of water, increase vitamin c intake, drink cranberry juice, and take probiotics
+gerd - avoid fatty spicy food, avoid lying down after eating, maintain healthy weight, and exercise
+heart attack - call ambulance, chew or swallow asprin, and keep calm
+
+Generated response (neural network PIP model): 
+Your 3 most likely physical illness risks are:
+urinary tract infection - 93.6%
+gastroenteritis - 0.6%
+hepatitis c - 0.5%
+
+Your suggested precautions are:
+urinary tract infection - drink plenty of water, increase vitamin c intake, drink cranberry juice, and take probiotics
+gastroenteritis - stop eating solid food for while, try taking small sips of water, rest, and ease back into eating
+hepatitis c - Consult nearest hospital, vaccination, eat healthy, and medication
+
+PASS (random forest PIP model)
+PASS (neural network PIP model)
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
+
+Provided message: I have these weird blister and sore looking things showing up on my face that are reddish-yellow. What sickness do I have?
+Extracted symptoms: ['blister', 'puffy_face_and_eyes', 'red_sore_around_nose', 'yellow_urine']
+Ground truth symptoms: ['blister', 'red_sore_around_nose', 'yellow_crust_ooze']
+Ground truth illness: impetigo
+
+Generated response (random forest PIP model): 
+Your 3 most likely physical illness risks are:
+impetigo - 57.2%
+hepatitis b - 7.2%
+acne - 2.4%
+
+Your suggested precautions are:
+impetigo - soak affected area in warm water, use antibiotics, remove scabs with wet compressed cloth, and consult doctor
+hepatitis b - consult nearest hospital, vaccination, eat healthy, and medication
+acne - bath twice, avoid fatty spicy food, drink plenty of water, and avoid too many products
+
+Generated response (neural network PIP model): 
+Your 3 most likely physical illness risks are:
+impetigo - 87.4%
+hepatitis b - 1.3%
+allergy - 1.2%
+
+Your suggested precautions are:
+impetigo - soak affected area in warm water, use antibiotics, remove scabs with wet compressed cloth, and consult doctor
+hepatitis b - consult nearest hospital, vaccination, eat healthy, and medication
+allergy - apply calamine, cover area with bandage, and use ice to compress itching
+
+PASS (random forest PIP model)
+PASS (neural network PIP model)
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
+
+Provided message: I have a lot of pain in my muscles and my joints, my eyes are a bit yellow, and I feel very tired. What is happening?
+Extracted symptoms: ['stomach_pain', 'swelling_joints', 'yellow_urine']
+Ground truth symptoms: ['muscle_pain', 'join_pain', 'yellowing_of_eyes', 'nausea']
+Ground truth illness: hepatitis a
+
+Generated response (random forest PIP model): 
+Your 3 most likely physical illness risks are:
+arthritis - 8.9%
+hepatitis b - 7.6%
+drug reaction - 7.0%
+
+Your suggested precautions are:
+arthritis - exercise, use hot and cold therapy, try acupuncture, and massage
+hepatitis b - consult nearest hospital, vaccination, eat healthy, and medication
+drug reaction - stop irritation, consult nearest hospital, stop taking drug, and follow up
+
+Generated response (neural network PIP model): 
+Your 3 most likely physical illness risks are:
+osteoarthristis - 14.7%
+hepatitis b - 13.1%
+drug reaction - 9.9%
+
+Your suggested precautions are:
+osteoarthristis - acetaminophen, consult nearest hospital, follow up, and salt baths
+hepatitis b - consult nearest hospital, vaccination, eat healthy, and medication
+drug reaction - stop irritation, consult nearest hospital, stop taking drug, and follow up
+
+FAIL (random forest PIP model)
+FAIL (neural network PIP model)
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
+
+Provided message: Hey hey, this is just testing to see that no symptoms are picked up and no PIP response is produced.
+Extracted symptoms: []
+Ground truth symptoms: []
+Ground truth illness: None
+
+Generated response (random forest PIP model): 
+
+Generated response (neural network PIP model): 
+
+PASS (random forest PIP model)
+PASS (neural network PIP model)
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
+
+Provided message: A message with no physical illness symptoms at all. No symptoms should be detected and no PIP response should be provided.
+Extracted symptoms: []
+Ground truth symptoms: []
+Ground truth illness: None
+
+Generated response (random forest PIP model): 
+
+Generated response (neural network PIP model): 
+
+PASS (random forest PIP model)
+PASS (neural network PIP model)
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
+
+Provided message: This message does not contain any information regarding physical illnesses, so no response should be generated.
+Extracted symptoms: []
+Ground truth symptoms: []
+Ground truth illness: None
+
+Generated response (random forest PIP model): 
+
+Generated response (neural network PIP model): 
+
+PASS (random forest PIP model)
+PASS (neural network PIP model)
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
+
+Provided message: Just another test message, no important information here.
+Extracted symptoms: []
+Ground truth symptoms: []
+Ground truth illness: None
+
+Generated response (random forest PIP model): 
+
+Generated response (neural network PIP model): 
+
+PASS (random forest PIP model)
+PASS (neural network PIP model)
+-----------------------------------------------------------------
+
+Ratio of passed test cases to total test cases (random forest PIP model): 12 / 14
+
+Ratio of passed test cases to total test cases (neural network PIP model): 12 / 14
+
+=================================================================
+
+=================================================================
+MENTAL ILLNESS PREDICTION (MIP) PIPELINE TEST CASES AND RESULTS
+=================================================================
+
+-----------------------------------------------------------------
+
+Provided message: I hate everything! I have been feeling bad for so long, which does not make sense. I have no idea why I am always sad, what is going on?
+Ground truth illness: depression
+
+Generated response (Logistic Regression MIP model): 
+Depression
+
+PASS (Logistic Regression MIP model)
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
+
+Provided message: I just don't get it, I am so confused about why I am suffering like this. Not sure what to do about all this, I am so nervous about it all. I am really worried and nervous all the time, why do I feel this way?
+Ground truth illness: anxiety
+
+Generated response (Logistic Regression MIP model): 
+Anxiety
+
+PASS (Logistic Regression MIP model)
+-----------------------------------------------------------------
+
+Ratio of passed test cases to total test cases (Logistic Regression MIP model): 2 / 2
+
+=================================================================
+
